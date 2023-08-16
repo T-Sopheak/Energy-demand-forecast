@@ -44,7 +44,7 @@ if file:
     
     # Create a line chart using Matplotlib
     fig, ax = plt.subplots()
-    ax.plot(pred_df.columns, pred_df.values[0,:])
+    ax.bar(pred_df.columns, pred_df.values[0,:])
     ax.set_xlabel('Month')
     ax.set_ylabel('Energer Demand')
     # Display the plot in Streamlit
